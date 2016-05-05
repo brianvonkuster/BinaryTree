@@ -1,9 +1,9 @@
 
 public class Node<T> {
 
-	private Node parent = null;
-	private Node left = null;
-	private Node right = null;
+	private Node<T> parent = null;
+	private Node<T> left = null;
+	private Node<T> right = null;
 	
 	private T data;
 	
@@ -29,17 +29,17 @@ public class Node<T> {
 	}
 	
 	// Getters
-	public Node getLeft()
+	public Node<T> getLeft()
 	{
 		return left;
 	}
 	
-	public Node getRight()
+	public Node<T> getRight()
 	{
 		return right;
 	}
 	
-	public Node getParent()
+	public Node<T> getParent()
 	{
 		return parent;
 	}
@@ -50,19 +50,19 @@ public class Node<T> {
 	}
 	
 	// Setters
-	public void setLeft(Node n)
+	public void setLeft(Node<T> n)
 	{
 		left = n;
 		left.parent = this;
 	}
 	
-	public void setRight(Node n)
+	public void setRight(Node<T> n)
 	{
 		right = n;
 		right.parent = this;
 	}
 	
-	public void setParent(Node n)
+	public void setParent(Node<T> n)
 	{
 		parent = n;
 	}
