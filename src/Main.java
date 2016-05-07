@@ -18,6 +18,8 @@ public class Main {
 		s.Insert("left");
 		s.Insert("right");
 		
+		// **Test commit from Ubuntu
+		
 		// In Order
 		System.out.println("In Order: ");
 		s.InOrder(s.getRoot());
