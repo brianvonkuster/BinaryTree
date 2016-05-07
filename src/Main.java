@@ -19,6 +19,7 @@ public class Main {
 		s.Insert("right");
 		
 		// **Test commit from Ubuntu
+		// *test2
 		
 		// In Order
 		System.out.println("In Order: ");
