@@ -52,9 +52,9 @@ public class Tree<T> implements INT_Tree<T> {
 	public void InOrder(Node<T> n) {
 		if (n != null)
 		{
-			PostOrder(n.getLeft());
+			InOrder(n.getLeft());
 			System.out.println(n.getData());
-			PostOrder(n.getRight());
+			InOrder(n.getRight());
 		}
 		
 	}
@@ -64,8 +64,8 @@ public class Tree<T> implements INT_Tree<T> {
 		if (n != null)
 		{
 			System.out.println(n.getData());
-			PostOrder(n.getLeft());
-			PostOrder(n.getRight());
+			PreOrder(n.getLeft());
+			PreOrder(n.getRight());
 		}
 		
 	}
